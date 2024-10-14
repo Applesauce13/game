@@ -1,0 +1,103 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left, .right {
+    width: 25%;
+    background-color: #fedda8; 
+}
+
+.middle {
+    width: 40%; 
+    background-color: #fff7b9; 
+    padding: 5%;
+}
+
+body{
+    margin: 0px;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1{
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+.navbar li{
+    float: left;
+}
+
+/* Image CSS */
+.imgComputer {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+}
+
+/*styling for total complete assignments*/
+#assignCounter {
+    text-align: centre;
+}
+
+.image-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for the Play Music button */
+#playPauseButton {
+    position: fixed; /* Fixed position */
+    bottom: 10px; /* Distance from the bottom */
+    left: 10px; /* Distance from the left */
+    padding: 10px 20px; /* Button padding */
+    background-color: #4CAF50; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor change on hover */
+    font-size: 16px; /* Font size */
+}
+#playPauseButton:hover {
+    background-color: #45a049; /* Button color on hover */
+}
+
+h3{
+    text-align: center;
+}
+
+/* CSS for fade-out effect */
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-out; /* 1 second fade-out */
+    background-color: black; /* Fade to black */
+}
+

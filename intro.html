@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntroCutScene</title>
+    <link rel="stylesheet" href="CSS/intro.css">
+</head>
+
+<body>
+
+    <video id="fullscreen-video" autoplay muted>
+        <source src="Videos/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>const video = document.getElementById('fullscreen-video');
+
+        // Request fullscreen on video play
+        video.onplay = function () {
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.webkitRequestFullscreen) {
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) {
+                video.msRequestFullscreen();
+            }
+        };
+
+        // Redirect to index.html once the video ends
+        video.onended = function () {
+            window.location.href = "index.html";
+        };</script>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+body {
+    margin: 0px;
+    padding: 0;
+    height: 100%;
+}
+ 
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+ 
+h1 {
+    text-align: center;
+}
+ 
+.navbar ul {
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+ 
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+ 
+.navbar a:hover {
+    background-color: hsl(0, 0%, 10%);
+}
+ 
+.navbar li {
+    float: left;
+}
+ 
+.striped-pattern {
+    height: 100vh; /* Full height of the viewport */
+    background: repeating-linear-gradient(
+        to right,
+        #D97A6B, /* Light red color */
+        #D97A6B 50px, /* Width of each red stripe */
+        #8B4B66 50px, /* Start of purple stripe */
+        #8B4B66 100px /* Width of each purple stripe */
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+/* Welcome Image */
+.welcome2 {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -110px; /* Adjust this value to control the overlap */
+}
+ 
+.welcome2 img {
+    max-width: 100%;
+    text-align: center;
+    height: auto;
+    max-height: 80vh; /* Ensure the image doesn't take up more than 80% of the viewport height */
+}
+ 
+/* Centered image button */
+.image-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+/* Smaller Enter the Game image */
+.image-button img {
+    max-width: 48%; /* Adjust the percentage to make the image smaller or larger */
+    text-align: center;
+    height: auto;
+    max-height: 50vh; /* Ensure the image doesn't take up more than 80% of the viewport height */
+}
+ 
+/* Optional: Hover effect */
+.image-button:hover img {
+    opacity: 0.8;
+}

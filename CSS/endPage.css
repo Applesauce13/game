@@ -1,0 +1,48 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: repeating-linear-gradient(
+        to right,
+        #FFF5CC,
+        #FFF5CC 50px,
+        #FDE9BD 50px,
+        #FDE9BD 100px
+    );
+}
+ 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+ 
+.welcome2 img {
+    max-width: 60%; /* Reduce this percentage to make the image smaller */
+    height: auto;
+    max-height: 60vh; /* Reduce this percentage to make the image smaller */
+}
+ 
+.image-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 20px;
+}
+ 
+.image-button img {
+    max-width: 40%; /* Reduce this percentage to make the images smaller */
+    height: auto;
+    max-height: 18vh; /* Reduce this percentage to make the images smaller */
+}
+ 
+.image-button img:hover {
+    opacity: 0.8;
+}
